@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 print("ProxyHunter - Made By D3fu1t\n")
 
 # Ask for the filename before starting
-filename = input("Enter file name to save proxies (e.g., proxies.txt): ")
+filename = input("Enter file name to save live proxies (e.g., proxies.txt): ")
 
 # Proxy sources
 PROXY_SOURCES = [
@@ -29,7 +29,8 @@ PROXY_SOURCES = [
 
 # Timeout for checking proxies
 PROXY_TIMEOUT = 3  # seconds
-THREADS = 50  # Check 50 proxies per second
+THREADS = 50  # Number of threads for proxy checking
+
 
 def fetch_proxies():
     """Fetch proxies from multiple sources and return a list."""
@@ -45,12 +46,8 @@ def fetch_proxies():
             continue
 
     print(f"Total proxies collected: {len(proxies)}")
-
-    # Save all proxies to the file before checking
-    with open(filename, "w") as file:
-        file.write("\n".join(proxies) + "\n")
-    
     return list(proxies)
+
 
 def check_proxy(proxy):
     """Check if a proxy is live."""
@@ -63,11 +60,13 @@ def check_proxy(proxy):
     except Exception:
         return None
 
+
 def save_live_proxies(live_proxies):
-    """Append live proxies to the file."""
-    with open(filename, "a") as file:
+    """Save only live proxies to the file (overwrite)."""
+    with open(filename, "w") as file:
         file.write("\n".join(live_proxies) + "\n")
     print(f"Saved {len(live_proxies)} live proxies to {filename}")
+
 
 def main():
     """Main function to fetch, check, and save live proxies."""
@@ -80,7 +79,6 @@ def main():
 
     print("Checking proxies for liveliness...")
 
-    live_proxies = []
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(check_proxy, proxies))
 
@@ -92,6 +90,7 @@ def main():
         save_live_proxies(live_proxies)
 
     print("Task completed. Exiting.")
+
 
 if __name__ == "__main__":
     main()
