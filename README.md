@@ -9,8 +9,6 @@ A powerful **proxy scraper and checker** that collects proxies from multiple sou
 ✅ Fetches proxies from **multiple sources**  
 ✅ Checks **50 proxies per second** for liveliness  
 ✅ Saves **only live proxies** to a file  
-✅ **Asks for a filename** before starting  
-✅ **Automatically exits** after completion  
 
 ## Installation
 
