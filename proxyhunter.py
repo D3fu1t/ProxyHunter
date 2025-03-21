@@ -5,7 +5,12 @@ from concurrent.futures import ThreadPoolExecutor
 print("ProxyHunter - Made By D3fu1t\n")
 
 # Ask for the filename before starting
-filename = input("Enter file name to save live proxies (e.g., proxies.txt): ")
+filename = input("Enter file name to save live proxies (Default, proxies.txt): ")
+
+# Safety fallback, incase filename is empty
+if (filename == ""):
+    filename = "proxies.txt"
+        
 
 # Proxy sources
 PROXY_SOURCES = [
