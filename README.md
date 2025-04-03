@@ -62,6 +62,10 @@ ProxyHunter fetches proxies from **multiple public sources**, including:
 - [OpenProxy Space](https://openproxy.space)  
 - And many more!  
 
+
+![Diagram](https://github.com/D3fu1t/ProxyHunter/blob/main/diagram.png)
+
+
 ## Contributing
 Want to **improve ProxyHunter**? Feel free to **fork** and submit a pull request!  
 
