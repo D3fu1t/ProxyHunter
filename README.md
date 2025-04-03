@@ -13,6 +13,10 @@ A powerful **proxy scraper and checker** that collects proxies from multiple sou
 
 ✅ Saves **only live proxies** to a file  
 
+
+![Diagram](https://github.com/D3fu1t/ProxyHunter/blob/main/diagram.png)
+
+
 ## Installation
 
 ### 1. Clone the Repository
@@ -62,8 +66,6 @@ ProxyHunter fetches proxies from **multiple public sources**, including:
 - [OpenProxy Space](https://openproxy.space)  
 - And many more!  
 
-
-![Diagram](https://github.com/D3fu1t/ProxyHunter/blob/main/diagram.png)
 
 
 ## Contributing
