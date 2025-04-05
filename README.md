@@ -13,7 +13,7 @@ A powerful **proxy scraper and checker** that collects proxies from multiple sou
 ✅ Saves **only live proxies** to a file  
 
 
-![Diagram](https://github.com/D3fu1t/ProxyHunter/blob/main/diagram.png)
+![Diagram](https://github.com/a1baradi/ProxyHunter/blob/main/diagram.png)
 
 
 ## Installation
