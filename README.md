@@ -1,9 +1,8 @@
 # ProxyHunter
 A powerful **proxy scraper and checker** that collects proxies from multiple sources, checks their availability, and saves only **live** proxies.
 
-**Made By D3fu1t**  
+**Made By Al Baradi Joy **  
 
-📌 **GitHub Repository:** [ProxyHunter](https://github.com/D3fu1t/ProxyHunter)
 
 ## Features
 ✅ Fetches proxies from **multiple sources** and Proxies updates from source in every hour
