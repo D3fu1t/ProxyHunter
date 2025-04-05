@@ -2,7 +2,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 
 # Simple Banner
-print("ProxyHunter - Made By D3fu1t\n")
+print("ProxyHunter - Made By Al Baradi Joy\n")
 
 # Ask for the filename before starting
 filename = input("Enter file name to save live proxies (Default, proxies.txt): ")
