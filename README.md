@@ -1,7 +1,7 @@
 # ProxyHunter
 A powerful **proxy scraper and checker** that collects proxies from multiple sources, checks their availability, and saves only **live** proxies.
 
-**Made By Al Baradi Joy **  
+**Made By Al Baradi Joy**  
 
 
 ## Features
